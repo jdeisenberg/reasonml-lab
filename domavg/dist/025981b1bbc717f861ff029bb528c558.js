@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({15:[function(require,module,exports) {
+})({14:[function(require,module,exports) {
 'use strict';
 
 
@@ -117,7 +117,7 @@ exports.create                       = create;
 exports.isCamlExceptionOrOpenVariant = isCamlExceptionOrOpenVariant;
 /* No side effect */
 
-},{}],5:[function(require,module,exports) {
+},{}],6:[function(require,module,exports) {
 'use strict';
 
 var Caml_exceptions = require("./caml_exceptions.js");
@@ -174,7 +174,7 @@ exports.raiseTypeError           = raiseTypeError;
 exports.raiseUriError            = raiseUriError;
 /* No side effect */
 
-},{"./caml_exceptions.js":15}],9:[function(require,module,exports) {
+},{"./caml_exceptions.js":14}],7:[function(require,module,exports) {
 'use strict';
 
 
@@ -276,7 +276,7 @@ exports.assert_failure             = assert_failure;
 exports.undefined_recursive_module = undefined_recursive_module;
 /*  Not a pure module */
 
-},{}],18:[function(require,module,exports) {
+},{}],23:[function(require,module,exports) {
 'use strict';
 
 var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
@@ -392,7 +392,7 @@ exports.caml_array_get    = caml_array_get;
 exports.caml_array_set    = caml_array_set;
 /* No side effect */
 
-},{"./caml_builtin_exceptions.js":9}],10:[function(require,module,exports) {
+},{"./caml_builtin_exceptions.js":7}],12:[function(require,module,exports) {
 'use strict';
 
 var Caml_array = require("./caml_array.js");
@@ -1029,7 +1029,7 @@ exports._8      = _8;
 exports.__8     = __8;
 /* No side effect */
 
-},{"./caml_array.js":18}],19:[function(require,module,exports) {
+},{"./caml_array.js":23}],21:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -1216,7 +1216,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],11:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 var process = require("process");
 'use strict';
 
@@ -1349,7 +1349,7 @@ exports.caml_ml_input_char          = caml_ml_input_char;
 exports.caml_ml_out_channels_list   = caml_ml_out_channels_list;
 /* stdin Not a pure module */
 
-},{"./curry.js":10,"./caml_builtin_exceptions.js":9,"process":19}],23:[function(require,module,exports) {
+},{"./curry.js":12,"./caml_builtin_exceptions.js":7,"process":21}],22:[function(require,module,exports) {
 'use strict';
 
 
@@ -1361,7 +1361,7 @@ function __(tag, block) {
 exports.__ = __;
 /* No side effect */
 
-},{}],13:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 'use strict';
 
 var Block                   = require("./block.js");
@@ -1672,7 +1672,7 @@ exports.caml_lessthan          = caml_lessthan;
 exports.caml_lessequal         = caml_lessequal;
 /* No side effect */
 
-},{"./block.js":23,"./caml_builtin_exceptions.js":9}],12:[function(require,module,exports) {
+},{"./block.js":22,"./caml_builtin_exceptions.js":7}],17:[function(require,module,exports) {
 var process = require("process");
 'use strict';
 
@@ -1774,7 +1774,7 @@ exports.caml_sys_is_directory   = caml_sys_is_directory;
 exports.caml_sys_file_exists    = caml_sys_file_exists;
 /* No side effect */
 
-},{"./caml_builtin_exceptions.js":9,"process":19}],20:[function(require,module,exports) {
+},{"./caml_builtin_exceptions.js":7,"process":21}],10:[function(require,module,exports) {
 'use strict';
 
 var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
@@ -1818,7 +1818,7 @@ exports.caml_nativeint_bswap = caml_nativeint_bswap;
 exports.imul                 = imul;
 /* imul Not a pure module */
 
-},{"./caml_builtin_exceptions.js":9}],22:[function(require,module,exports) {
+},{"./caml_builtin_exceptions.js":7}],13:[function(require,module,exports) {
 'use strict';
 
 
@@ -1851,7 +1851,7 @@ var repeat = ( (String.prototype.repeat && function (count,self){return self.rep
 exports.repeat = repeat;
 /* repeat Not a pure module */
 
-},{}],21:[function(require,module,exports) {
+},{}],11:[function(require,module,exports) {
 'use strict';
 
 var Caml_obj                = require("./caml_obj.js");
@@ -2453,7 +2453,7 @@ exports.bits_of_float = bits_of_float;
 exports.get64         = get64;
 /* two_ptr_32_dbl Not a pure module */
 
-},{"./caml_obj.js":13,"./caml_int32.js":20,"./caml_utils.js":22,"./caml_builtin_exceptions.js":9}],7:[function(require,module,exports) {
+},{"./caml_obj.js":16,"./caml_int32.js":10,"./caml_utils.js":13,"./caml_builtin_exceptions.js":7}],5:[function(require,module,exports) {
 'use strict';
 
 var Curry                   = require("./curry.js");
@@ -3256,7 +3256,7 @@ exports.caml_int64_of_string     = caml_int64_of_string;
 exports.caml_nativeint_of_string = caml_nativeint_of_string;
 /* float_of_string Not a pure module */
 
-},{"./curry.js":10,"./caml_int32.js":20,"./caml_int64.js":21,"./caml_utils.js":22,"./caml_builtin_exceptions.js":9}],14:[function(require,module,exports) {
+},{"./curry.js":12,"./caml_int32.js":10,"./caml_int64.js":11,"./caml_utils.js":13,"./caml_builtin_exceptions.js":7}],18:[function(require,module,exports) {
 'use strict';
 
 var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
@@ -3461,7 +3461,7 @@ exports.string_of_char            = string_of_char;
 exports.get                       = get;
 /* No side effect */
 
-},{"./caml_builtin_exceptions.js":9}],16:[function(require,module,exports) {
+},{"./caml_builtin_exceptions.js":7}],19:[function(require,module,exports) {
 'use strict';
 
 
@@ -3470,7 +3470,7 @@ var not_implemented = (function (s){ throw new Error(s)});
 exports.not_implemented = not_implemented;
 /* not_implemented Not a pure module */
 
-},{}],17:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 'use strict';
 
 var Block = require("./block.js");
@@ -3700,7 +3700,7 @@ exports.erase_rel    = erase_rel;
 exports.concat_fmt   = concat_fmt;
 /* No side effect */
 
-},{"./block.js":23}],6:[function(require,module,exports) {
+},{"./block.js":22}],9:[function(require,module,exports) {
 'use strict';
 
 var Curry                    = require("./curry.js");
@@ -4396,7 +4396,7 @@ exports.unsafe_really_input = unsafe_really_input;
 exports.do_at_exit          = do_at_exit;
 /* No side effect */
 
-},{"./curry.js":10,"./caml_io.js":11,"./caml_obj.js":13,"./caml_sys.js":12,"./caml_format.js":7,"./caml_string.js":14,"./caml_exceptions.js":15,"./caml_missing_polyfill.js":16,"./caml_builtin_exceptions.js":9,"./camlinternalFormatBasics.js":17}],8:[function(require,module,exports) {
+},{"./curry.js":12,"./caml_io.js":15,"./caml_obj.js":16,"./caml_sys.js":17,"./caml_format.js":5,"./caml_string.js":18,"./caml_exceptions.js":14,"./caml_missing_polyfill.js":19,"./caml_builtin_exceptions.js":7,"./camlinternalFormatBasics.js":20}],8:[function(require,module,exports) {
 'use strict';
 
 
@@ -4549,4 +4549,4 @@ exports.avg           = avg;
 exports.calculate     = calculate;
 /* match Not a pure module */
 
-},{"bs-platform/lib/js/js_exn.js":5,"bs-platform/lib/js/pervasives.js":6,"bs-platform/lib/js/caml_format.js":7,"bs-platform/lib/js/js_primitive.js":8,"bs-platform/lib/js/caml_builtin_exceptions.js":9}]},{},[4])
+},{"bs-platform/lib/js/js_exn.js":6,"bs-platform/lib/js/pervasives.js":9,"bs-platform/lib/js/caml_format.js":5,"bs-platform/lib/js/js_primitive.js":8,"bs-platform/lib/js/caml_builtin_exceptions.js":7}]},{},[4])
