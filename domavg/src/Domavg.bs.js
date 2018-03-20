@@ -82,6 +82,8 @@ if (!(match == null)) {
   match.addEventListener("click", calculate);
 }
 
+console.log(4);
+
 exports.optFloat      = optFloat;
 exports.getInputValue = getInputValue;
 exports.setText       = setText;

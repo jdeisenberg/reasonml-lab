@@ -52,4 +52,3 @@ switch (Document.getElementById("calculate", document)) {
 };
 
   
-
